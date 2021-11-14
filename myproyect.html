@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+<div id="forma"  style="
+
+  width: 100px;
+  height: 200px;
+  background: rgb(25, 0, 255);
+ 
+  position:absolute;
+  left:50px;
+  top:400px;"
+  
+>
+<i class='far fa-grin-alt' style='font-size:36px'></i>
+</div>
+
+<div id="forma1" style="
+  width: 100px;
+  height: 200px;
+  background: rgb(19, 172, 14);
+  position:absolute;
+  left:250px;
+  top:400px;"
+>
+
+</div>
+
+<div id="forma2" style="
+  width: 100px;
+  height: 200px;
+  background: rgb(5, 0, 0);
+  position:absolute;
+  left:450px;
+  top:400px;"
+>
+</div>
+
+<div id="forma3" style="
+
+  width: 100px;
+  height: 200px;
+  background: rgb(233, 236, 13);
+  position:absolute;
+  left:650px;
+  top:400px;"
+>
+</div>
+
+
+<div id="ball" style="
+  z-index:5;
+  position:absolute;
+  left:50px;
+  top:20px;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  background:rgb(25, 0, 255)">
+</div>
+<div id="ball1" style="
+  z-index:5;
+  position:absolute;
+  left:250px;
+  top:20px;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  background:rgb(19, 172, 14)">
+</div>
+<div id="ball2" style="
+  z-index:5;
+  position:absolute;
+  left:450px;
+  top:20px;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  background:rgb(5, 0, 0)">
+</div>
+<div id="ball3" style="
+  z-index:5;
+  position:absolute;
+  left:650px;
+  top:20px;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  background:rgb(233, 236, 13)">
+</div>
+
+<!------------------------->
+<!-------- CARITA --------->
+<!------------------------->
+
+<div id="ojoIzq" style="
+  z-index: 11;
+  position: absolute;
+  left: 80px;
+  top:  430px;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background: #000;
+  "> 
+</div>
+<div id="ojoDer" style="
+  z-index: 11;
+  position: absolute;
+  left: 105px;
+  top:  430px;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background: #000;
+  "> 
+</div>
+<div id="boca" style="
+  width: 50px;
+  height: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: 450px;
+  left: 75px;
+  border-radius: 50%;
+  z-index: 10px;
+  border-top: 5px solid #000;
+">
+
+</div>
+<script>
+
+ 
+
+    var distancia = 50;
+    var posicion = 0;
+    var tiempo=100;
+    // Toma el elemento “ball”
+    var ball = document.getElementById('ball');
+   
+    
+    setInterval (function(){
+       /* if (posicion<0 ||posicion>300){
+            distancia=(-1)*distancia;
+            distancia=Math.floor((Math.random() * 100) + -1)
+        }*/
+
+        if (posicion>300){
+          posicion = 0;
+          distancia=Math.floor((Math.random() * 100) + 1)
+        }
+
+
+        // move ball
+    posicion = posicion + distancia;
+    // Define la posición de “ball” 
+    ball.style.top = posicion + 'px';
+
+    },tiempo)
+
+    var distancia1 = 50;
+    var posicion1 = 0;
+    var tiempo1=100;
+    // Toma el elemento “ball”
+    var ball1 = document.getElementById('ball1');
+   
+    
+    setInterval (function(){
+      if (posicion1>300){
+          posicion1 = 0;
+          distancia1=Math.floor((Math.random() * 100) + 1)
+        }
+
+
+        // move ball
+    posicion1 = posicion1 + distancia1;
+    // Define la posición de “ball” 
+    ball1.style.top = posicion1 + 'px';
+
+    },tiempo1)
+
+
+    var distancia2 = 50;
+    var posicion2= 0;
+    var tiempo2=100;
+    // Toma el elemento “ball”
+    var ball2 = document.getElementById('ball2');
+   
+    
+    setInterval (function(){
+      if (posicion2>300){
+          posicion2 = 0;
+          distancia2=Math.floor((Math.random() * 100) + 1)
+        }
+
+
+        // move ball
+    posicion2 = posicion2 + distancia2;
+    // Define la posición de “ball” 
+    ball2.style.top = posicion2 + 'px';
+
+    },tiempo2)
+    
+    var distancia3 = 50;
+    var posicion3 = 0;
+    var tiempo3=100;
+    // Toma el elemento “ball”
+    var ball3 = document.getElementById('ball3');
+   
+    
+    setInterval (function(){
+      if (posicion3>300){
+          posicion3 = 0;
+          distancia3=Math.floor((Math.random() * 100) + 1)
+        }
+
+
+        // move ball
+    posicion3 = posicion3 + distancia3;
+    // Define la posición de “ball” 
+    ball3.style.top = posicion3 + 'px';
+
+    },tiempo3)
+    
+    </script>
+
+
+</head>
+<body>
